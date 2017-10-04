@@ -34,47 +34,30 @@ public class OrdinaryAccountTest {
 	}
 
 	@Test
-	public void testDebit() {
-		/*try {
-			account.debit(30);
-			assertEquals("message", 30, account.getBalance(), 0.0);
-		} catch (NegativeAmountException e) {
-			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		} catch (InsufficientFundsException e) {
-			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		}*/
-	}
-
-	@Test
-	public void testOrdinaryAccount() {
-		/*
-		try {
-			account.debit(30);
-			assertEquals("message", 30, account.getBalance(), 0.0);
-		} catch (NegativeAmountException e) {
-			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		} catch (InsufficientFundsException e) {
-			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		}*/
-	}
-
-	@Test
 	public void testCredit() {
-		/*
 		try {
-			account.debit(30);
-			assertEquals("message", 30, account.getBalance(), 0.0);
+			account.credit(50);
+			assertEquals("Erro na op", 50, account.getBalance(), 0.0);
 		} catch (NegativeAmountException e) {
 			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		} catch (InsufficientFundsException e) {
-			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		}*/
+			e.printStackTrace();
+		} finally {
+			account = new OrdinaryAccount("123A");
+		}
+		
 	}
 
+	@Test(expected = InsufficientFundsException.class)
+	public void testDebit() throws InsufficientFundsException {
+		try {
+			account.debit(20);
+			assertEquals("Erro na op", 20, account.getBalance(), 0.0);
+		} catch (NegativeAmountException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			account = new OrdinaryAccount("123A");
+		}
+		
+	}
 }

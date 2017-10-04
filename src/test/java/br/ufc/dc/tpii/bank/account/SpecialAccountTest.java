@@ -25,28 +25,22 @@ public class SpecialAccountTest {
 			assertEquals("Erro na op", 50.5, account.getBalance(), 0.0);
 			account.debit(30);
 			assertEquals("Erro na op", 20.5, account.getBalance(), 0.0);
-		} catch (NegativeAmountException e) {
-			// TODO Auto-generated catch block
-			fail(e.getMessage());
-		} catch (InsufficientFundsException e) {
+		} catch (NegativeAmountException | InsufficientFundsException e) {
 			// TODO Auto-generated catch block
 			fail(e.getMessage());
 		}
 	}
 
 	@Test
-	public void testCredit() {
-		//fail("Not yet implemented");
-	}
-
-	@Test
 	public void testEarnBonus() {
-		//fail("Not yet implemented");
+		try {
+			account.credit(50);
+			account.earnBonus();
+			assertEquals("Erro na op", 50.5, account.getBalance(), 0.0);
+		} catch (NegativeAmountException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
-
-	@Test
-	public void testGetBonus() {
-		//fail("Not yet implemented");
-	}
-
 }

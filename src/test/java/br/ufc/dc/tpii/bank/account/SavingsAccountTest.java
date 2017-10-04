@@ -33,30 +33,18 @@ public class SavingsAccountTest {
 			fail(e.getMessage());
 		}
 	}
-	
-	@Test
-	public void testSavingsAccount() {
-		//fail("Not yet implemented");
-	}
 
 	@Test
 	public void testEarnInterest() {
-		//fail("Not yet implemented");
-	}
-
-	@Test
-	public void testDebit() {
-		//fail("Not yet implemented");
-	}
-
-	@Test
-	public void testOrdinaryAccount() {
-		//fail("Not yet implemented");
-	}
-
-	@Test
-	public void testCredit() {
-		//fail("Not yet implemented");
+		try {
+			account.credit(50.00);
+			account.earnInterest();
+			assertEquals("Erro na op", 50.05, account.getBalance(), 0.0);
+		} catch (NegativeAmountException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 }
