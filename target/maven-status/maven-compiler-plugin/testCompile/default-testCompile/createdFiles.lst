@@ -1,1 +1,5 @@
+br/ufc/dc/tpii/bank/account/SavingsAccountTest.class
+br/ufc/dc/tpii/bank/control/BankControllerTest.class
+br/ufc/dc/tpii/bank/account/SpecialAccountTest.class
+br/ufc/dc/tpii/bank/account/TaxAccountTest.class
 br/ufc/dc/tpii/bank/account/OrdinaryAccountTest.class
