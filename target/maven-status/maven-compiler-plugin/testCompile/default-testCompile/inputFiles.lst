@@ -1,5 +1,5 @@
-/home/thiagoripardo/workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/SpecialAccountTest.java
-/home/thiagoripardo/workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/TaxAccountTest.java
-/home/thiagoripardo/workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/SavingsAccountTest.java
-/home/thiagoripardo/workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/control/BankControllerTest.java
-/home/thiagoripardo/workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/OrdinaryAccountTest.java
+/home/362987/eclipse-workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/OrdinaryAccountTest.java
+/home/362987/eclipse-workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/SavingsAccountTest.java
+/home/362987/eclipse-workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/control/BankControllerTest.java
+/home/362987/eclipse-workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/SpecialAccountTest.java
+/home/362987/eclipse-workspace/banksys-maven/src/test/java/br/ufc/dc/tpii/bank/account/TaxAccountTest.java
